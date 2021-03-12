@@ -1,0 +1,7 @@
+main: me.fertiz.spawn.Main
+version: 1.0
+name: FZ-SPAWN
+author: fertiz
+commands:
+  spawn:
+  setspawn:

@@ -27,7 +27,6 @@ public class TeleportationManager extends BukkitRunnable {
 
         if (p.getLocation().getBlockX() != from.getBlockX() || p.getLocation().getBlockY() != from.getBlockY() || p.getLocation().getBlockZ() != from.getBlockZ()) {
             ChatUtil.sendActionBar(p, "&8>> &cRuszyles sie! &7Przerwano teleportacje &8<<");
-            time = 5;
             this.cancel();
             return;
         }
@@ -38,7 +37,6 @@ public class TeleportationManager extends BukkitRunnable {
         } else {
             p.teleport(spawnLocation);
             ChatUtil.sendActionBar(p, "&8>> &7Pomyslnie przeteleportowano! &8<<");
-            time = 5;
             this.cancel();
         }
     }

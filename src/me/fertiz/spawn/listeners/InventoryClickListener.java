@@ -29,7 +29,7 @@ public class InventoryClickListener implements Listener {
             
             p.closeInventory();
             
-            new TeleportationManager(p, p.getLocation()).runTaskTimer(plugin, 0, 20);
+            new TeleportationManager(p).runTaskTimer(plugin, 0, 20);
         }
     }
 }

@@ -15,8 +15,8 @@ public class TeleportationManager extends BukkitRunnable {
     private final Location spawnLocation;
     private long time = Main.getInstance().getConfig().getInt("spawn.time");
 
-    public TeleportationManager(Player p, Location from) {
-        this.from = from;
+    public TeleportationManager(Player p) {
+        this.from = p.getLocation();
         this.p = p;
         World w = Bukkit.getWorlds().get(0);
         this.spawnLocation = new Location(w, w.getSpawnLocation().getX() + 0.5, w.getSpawnLocation().getY(), w.getSpawnLocation().getZ() + 0.5);

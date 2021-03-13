@@ -19,7 +19,7 @@ public class InventoryClickListener implements Listener {
     @EventHandler
     public void onInventoryClick(InventoryClickEvent e) {
 
-        if (e.getClickedInventory() == null || !e.getInventory().getTitle().equalsIgnoreCase(ChatUtil.fixColor("&8>> &3SPAWN &8<<"))) return;
+        if (e.getClickedInventory() == null || !e.getClickedInventory().getTitle().equalsIgnoreCase(ChatUtil.fixColor("&8>> &3SPAWN &8<<"))) return;
 
         e.setCancelled(true);
 

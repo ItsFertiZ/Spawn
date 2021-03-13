@@ -23,10 +23,12 @@ public class InventoryClickListener implements Listener {
 
         e.setCancelled(true);
 
-        Player p = (Player) e.getWhoClicked();
-
         if (e.getSlot() == 13) {
+            
+            Player p = (Player) e.getWhoClicked();
+            
             p.closeInventory();
+            
             new TeleportationManager(p, p.getLocation()).runTaskTimer(plugin, 0, 20);
         }
     }

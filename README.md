@@ -1,2 +1,2 @@
 # Spawn
-nie wiem
+Kod może nie jest wybitny, ale działa 😶
